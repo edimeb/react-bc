@@ -4,8 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "prebuild": "rimraf dist al/dist",
     "dev": "vite",
     "build": "tsc -b && vite build",
+  "postbuild": "npm run copy-dist && node update-controladdin.cjs && node patch-assets-paths.cjs",
+    "copy-dist": "copyfiles -u 1 dist/**/* al/dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -14,6 +17,8 @@
     "react-dom": "^19.1.1"
   },
   "devDependencies": {
+    "rimraf": "^5.0.5",
+    "copyfiles": "^2.4.1",
     "@eslint/js": "^9.33.0",
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",

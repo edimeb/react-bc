@@ -1,6 +1,8 @@
 controladdin "customerReactControl"
 {
-    Scripts = '/dist/assets/index-CAl1KfkQ.js';
+    Scripts = 'dist/assets/index-BoOSYPo5.js';
     StyleSheets = 'dist/assets/index-D8b4DHJx.css';
-    StartupScript = 'dist/index.html';
+    Images = 'dist/vite.svg', 'dist/assets/react-CHdo91hT.svg';
+    RequestedHeight = 600;
+    RequestedWidth = 800;
 }
