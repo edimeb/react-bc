@@ -1,2 +1,3 @@
 # Ignore all .app files
 *.app
+.vscode/launch.json
