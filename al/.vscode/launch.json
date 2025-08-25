@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "name": "AL: Launch Customer React Page",
+            "type": "al",
+            "request": "launch",
+            "startupObjectType": "Page",
+            "startupObjectId": 50101,
+            "schemaUpdateMode": "Synchronize",
+            "environmentType": "Sandbox",
+            "environmentName": "your-environment-name",
+            "tenant": "your-tenant-id"
+        }
+    ]
+}
